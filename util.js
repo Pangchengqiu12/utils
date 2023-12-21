@@ -95,6 +95,7 @@ export const removeTag = (fragment) =>
   new DOMParser().parseFromString(fragment, "text/html").body.textContent || "";
 
 /**
+ * 防抖
  *@param {Function} callback 传入的执行函数
  *@param {Number} delay 延迟的时间单位毫秒，默认500
  *@return {Function}
